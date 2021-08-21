@@ -57,5 +57,6 @@ document.getElementById('apply-btn').addEventListener('click', function () {
     const promoCode = document.getElementById('cupon-field').value;
     if (promoCode == 'stevekaku') {
         finalCoast.innerText = parseFloat(totalprice) - (parseFloat(totalprice) / 5);
+        document.getElementById('cupon-field').value = '';
     }
 })
