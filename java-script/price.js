@@ -59,4 +59,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
         finalCoast.innerText = parseFloat(totalprice) - (parseFloat(totalprice) / 5);
         document.getElementById('cupon-field').value = '';
     }
+    else {
+        document.getElementById('cupon-field').value = '';
+    }
 })
