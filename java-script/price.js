@@ -48,4 +48,12 @@ function totalprice() {
     const toatalCoast = memoreyPrice + storagePrice + delivaryCoast + 1299;
     document.getElementById('total-coast').innerText = toatalCoast;
 }
-
+// final coast with discount 
+document.getElementById('apply-btn').addEventListener('click', function () {
+    const totalprice = document.getElementById('total-coast').innerText
+    const finalCoast = document.getElementById('final-coast')
+    const promoCode = document.getElementById('cupon-field').value;
+    if (promoCode == 'stevekaku') {
+        finalCoast.innerText = parseFloat(totalprice) - (parseFloat(totalprice) / 10);
+    }
+})
