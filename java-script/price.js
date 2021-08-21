@@ -47,6 +47,8 @@ function totalprice() {
     const delivaryCoast = parseFloat(delivary);
     const toatalCoast = memoreyPrice + storagePrice + delivaryCoast + 1299;
     document.getElementById('total-coast').innerText = toatalCoast;
+    const finalCoast = document.getElementById('final-coast')
+    finalCoast.innerText = document.getElementById('total-coast').innerText;
 }
 // final coast with discount 
 document.getElementById('apply-btn').addEventListener('click', function () {
