@@ -25,46 +25,56 @@
                     Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse, Magic
                     Keyboard US English.</p>
             </div>
+            <!-- products selector  -->
             <div>
                 <h3>Memory</h3>
-                <button class="choosing-btn">8GB unified memory</button>
-                <button class="choosing-btn">16GB unified memory</button>
+                <button id="8GB-memory-btn" class="choosing-btn">8GB unified memory</button>
+                <button id="16GB-memory-btn" class="choosing-btn">16GB unified memory</button>
             </div>
             <div>
                 <h3>Storage</h3>
-                <button class="choosing-btn">256GB SSD storage</button>
-                <button class="choosing-btn">512GB SSD storage</button>
-                <button class="choosing-btn">1Tb SSD storage</button>
+                <button id="256GB-storage-btn" class="choosing-btn">256GB SSD storage</button>
+                <button id="512GB-storage-btn" class="choosing-btn">512GB SSD storage</button>
+                <button id="1TB-storage-btn" class="choosing-btn">1TB SSD storage</button>
             </div>
+            <!-- delivery selector -->
             <div>
                 <h3>Chose your delivery option</h3>
-                <button class="choosing-btn">Friday, Aug 25 free prime delivery</button>
-                <button class="choosing-btn">Friday, Aug 21 delivery charge $20</button>
+                <button id="free-delivery-btn" class="choosing-btn">Friday, Aug 25 free prime delivery</button>
+                <button id="paid-delivery-btn" class="choosing-btn">Friday, Aug 21 delivery charge $20</button>
             </div>
+            <!-- product-price  -->
             <div id="price-part">
                 <div>
                     <h4>Best price</h4>
+                    <hr>
                     <h4>Extra memory coast</h4>
+                    <hr>
                     <h4>Extra storage coast</h4>
+                    <hr>
                     <h4>Delivery charge</h4>
                     <hr>
                     <h4>Total price</h4>
                 </div>
                 <div>
-                    <h4> $1229</h4>
-                    <h4> $0</h4>
-                    <h4> $0</h4>
-                    <h4> $0</h4>
+                    <h4> $ <span>1299</span></h4>
                     <hr>
-                    <h4> $1229</h4>
+                    <h4> $<span id="extra-memory-coast">0</span></h4>
+                    <hr>
+                    <h4> $<span id="extra-storage-coast">0</span></h4>
+                    <hr>
+                    <h4> $<span id="delivery-charge">0</span></h4>
+                    <hr>
+                    <h4> $<span id="total-coast">1299</span></h4>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <hr>
-        <h1 id="total-price">Total:$1229</h1>
+        <h1 id="total-price">Total: $1229</h1>
     </footer>
+    <script src="java-script/price.js"></script>
 </body>
 
 </html>
